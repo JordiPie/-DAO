@@ -3,6 +3,7 @@ package edu.upc.eetac.dsa;
 import edu.upc.eetac.dsa.model.User;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 
 public class UserDAOImpl implements IUserDAO {
@@ -29,10 +30,10 @@ public class UserDAOImpl implements IUserDAO {
 
     public User getUser(int userId) {
         Session session = null;
-        User employee = null;
+        User user = null;
         try {
             session = FactorySession.openSession();
-            employee = (User)session.get(User.class, "id", userId);
+            user = (User)session.get(User.class, "id", userId);
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -42,7 +43,7 @@ public class UserDAOImpl implements IUserDAO {
             session.close();
         }
 
-        return employee;
+        return user;
     }
 
     public User getUserByEmail(String email) {
@@ -62,6 +63,9 @@ public class UserDAOImpl implements IUserDAO {
 
         return user;
     }
+
+
+
 
     public void updateEmployee(int employeeID, String name, String surname, String  email, String password) {
         User employee = this.getUser(employeeID);
@@ -140,10 +144,7 @@ public class UserDAOImpl implements IUserDAO {
         return employeeList;
     }
 
-    @Override
-    public User getUserByName(String jordi) {
-        return null;
-    }
+
 
 
 }

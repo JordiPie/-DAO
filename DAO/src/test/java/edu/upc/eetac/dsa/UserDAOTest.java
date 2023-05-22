@@ -8,15 +8,15 @@ public class UserDAOTest {
     @Test
     public void addUserTest() {
         IUserDAO userDAO = new UserDAOImpl();
-        userDAO.addUser("anna", "sabater","anna@upc","1234" );
+        userDAO.addUser("pep", "aa","pep@upc","12345" );
     }
 
     @Test
     public void getUserTest() {
         IUserDAO userDAO = new UserDAOImpl();
-        edu.upc.eetac.dsa.model.User user = userDAO.getUser(1);
+        edu.upc.eetac.dsa.model.User user = userDAO.getUser(14);
 
-        Assert.assertEquals("Jordi", user.getName());
+        Assert.assertEquals("jordi", user.getName());
 
     }
 
@@ -25,9 +25,9 @@ public class UserDAOTest {
     @Test
     public void getUserTest2() {
         IUserDAO userDAO = new UserDAOImpl();
-        edu.upc.eetac.dsa.model.User user = userDAO.getUserByName("Jordi");
+        edu.upc.eetac.dsa.model.User user = userDAO.getUserByEmail("pep@upc");
 
-        Assert.assertEquals("Jordi", user.getName());
+        Assert.assertEquals("12345", user.getPassword());
 
     }
 

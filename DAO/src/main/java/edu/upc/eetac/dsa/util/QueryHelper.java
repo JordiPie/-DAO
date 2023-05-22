@@ -41,6 +41,13 @@ public class QueryHelper {
         return sb.toString();
     }
 
+    public static String createQuerySELECTByName(Class theClass, String username){
+        StringBuffer sb = new StringBuffer("");
+        sb.append("SELECT * FROM ").append(theClass.getSimpleName());
+        sb.append(" WHERE username = '").append(username).append("'");
+        return sb.toString();
+    }
+
     /*public static String createQuerySelectWithP(Class theClass, HashMap params) {
         StringBuffer sb = new StringBuffer();
         sb.append("SELECT * FROM ").append(theClass.getSimpleName());

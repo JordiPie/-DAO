@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b94a00-bc5e-4c5f-b307-497a66310c14" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2dc3c796-4d29-4278-9ede-344572a32f52.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2dc3c796-4d29-4278-9ede-344572a32f52.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/IUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/Session.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/SessionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/SessionImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/util/QueryHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/src/main/java/edu/upc/eetac/dsa/util/QueryHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/src/test/java/edu/upc/eetac/dsa/UserDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/src/test/java/edu/upc/eetac/dsa/UserDAOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +71,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserDAOTest.getUserTest">
+  <component name="RunManager" selected="JUnit.UserDAOTest.getUserTest2">
     <configuration name="ObjectHelperTest.setterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAO" />
       <extension name="coverage">
@@ -146,8 +146,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDAOTest.getUserTest" />
         <item itemvalue="JUnit.UserDAOTest.getUserTest2" />
+        <item itemvalue="JUnit.UserDAOTest.getUserTest" />
         <item itemvalue="JUnit.UserDAOTest.addUserTest" />
         <item itemvalue="JUnit.java in DAO" />
         <item itemvalue="JUnit.ObjectHelperTest.setterTest" />
@@ -178,22 +178,11 @@
       <workItem from="1684685760679" duration="19000" />
       <workItem from="1684686030391" duration="5000" />
       <workItem from="1684743891252" duration="104000" />
-      <workItem from="1684744012294" duration="2602000" />
+      <workItem from="1684744012294" duration="7128000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DAO/src/test/java/edu/upc/eetac/dsa/UserDAOTest.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

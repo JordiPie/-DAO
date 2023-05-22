@@ -51,7 +51,8 @@ public class SessionImpl implements Session {
     }
 
 
-    public Object get(Class theClass, String pk, Object value) {
+
+   public Object get(Class theClass, String pk, Object value) {
         String selectQuery  = QueryHelper.createQuerySELECT(theClass, pk);
         ResultSet rs;
         PreparedStatement pstm = null;
@@ -72,6 +73,7 @@ public class SessionImpl implements Session {
             while (rs.next()){
                 for (int i=1; i<=numberOfColumns; i++){
                     String columnName = rsmd.getColumnName(i);
+                    ObjectHelper.setter(o, columnName, rs.getObject(i));
                     System.out.println(columnName);
                     System.out.println(rsmd.getColumnType(i));
                     valueColumn = rs.getObject(i);
