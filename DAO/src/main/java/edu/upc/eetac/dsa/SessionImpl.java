@@ -75,7 +75,7 @@ public class SessionImpl implements Session {
                     System.out.println(columnName);
                     System.out.println(rsmd.getColumnType(i));
                     valueColumn = rs.getObject(i);
-                    if (valueColumn!=null) ObjectHelper.setter(o, columnName, rs.getObject(i));
+                    //if (valueColumn!=null) ObjectHelper.setter(o, columnName, rs.getObject(i));
                 }
             }
             return o;

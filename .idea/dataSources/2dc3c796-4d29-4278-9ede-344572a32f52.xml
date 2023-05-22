@@ -1388,7 +1388,7 @@
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
     <column id="519" parent="518" name="id">
-      <AutoIncrement>7</AutoIncrement>
+      <AutoIncrement>13</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1401,16 +1401,20 @@
       <DasType>varchar(30)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="522" parent="518" name="salary">
-      <DasType>int(11)|0s</DasType>
+    <column id="522" parent="518" name="email">
+      <DasType>varchar(30)|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="523" parent="518" name="PRIMARY">
+    <column id="523" parent="518" name="password">
+      <DasType>varchar(30)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <index id="524" parent="518" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="524" parent="518" name="PRIMARY">
+    <key id="525" parent="518" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

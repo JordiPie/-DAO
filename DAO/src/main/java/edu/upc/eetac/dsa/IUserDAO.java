@@ -6,12 +6,12 @@ import java.util.List;
 
 public interface IUserDAO {
 
-    public int addUser(String name, String surname, int salary);
+    public int addUser(String name, String surname, String email, String password);
     public User getUser(int employeeID);
-    public void updateEmployee(int employeeID, String name, String surname, int salary);
+    //public void updateEmployee(int employeeID, String name, String surname, int salary);
     public void deleteEmployee(int employeeID);
     public List<User> getEmployees();
     public List <User> getEmployeeByDept(int deptId);
 
-    User getUserByName(String jordi);
+    User getUserByName(String name);
 }

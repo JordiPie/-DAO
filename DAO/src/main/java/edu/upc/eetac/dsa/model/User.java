@@ -4,12 +4,14 @@ public class User {
 
     private String name;
     private String surname;
-    private int salary;
+    private String  email;
+    private String password;
 
-    public User(String  name, String surname, int salary) {
+    public User(String  name, String surname, String email, String password) {
         this.name = name;
         this.surname = surname;
-        this.salary = salary;
+        this.email = email;
+        this.password= password;
     }
 
     public User() {
@@ -24,8 +26,12 @@ public class User {
         return surname;
     }
 
-    public int getSalary() {
-        return salary;
+    public String  getEmail() {
+        return email;
+    }
+
+    public String  getPassword() {
+        return password;
     }
 
     public void setName(String name) {
@@ -36,7 +42,13 @@ public class User {
         this.surname = surname;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
+    public void setEmail(String  email) {
+        this.email = email;
     }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
 }

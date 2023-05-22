@@ -8,12 +8,12 @@ import java.util.List;
 public class UserDAOImpl implements IUserDAO {
 
 
-    public int addUser(String name, String surname, int salary) {
+    public int addUser(String name, String surname, String email, String password) {
         Session session = null;
         int employeeID = 0;
         try {
             session = FactorySession.openSession();
-            User user = new User(name, surname, salary);
+            User user = new User(name, surname, email, password);
             session.save(user);
         }
         catch (Exception e) {
@@ -63,11 +63,12 @@ public class UserDAOImpl implements IUserDAO {
         return user;
     }
 
-    public void updateEmployee(int employeeID, String name, String surname, int salary) {
+    public void updateEmployee(int employeeID, String name, String surname, String  email, String password) {
         User employee = this.getUser(employeeID);
         employee.setName(name);
         employee.setSurname(surname);
-        employee.setSalary(salary);
+        employee.setEmail(email);
+        employee.setPassword(password);
 
         Session session = null;
         try {
@@ -98,6 +99,7 @@ public class UserDAOImpl implements IUserDAO {
         }
 
     }
+
 
 
     public List<User> getEmployees() {
